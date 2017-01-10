@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Encoding=UTF-8
+Name=Rocket Chat (Nightly)
+Comment=an open-source chat client
+Exec=/app/bin/rocketchat
+Icon=/app/share/rocketchat/build/images/icon.png
+Terminal=false
+Categories=Network;InstantMessaging;Chat;

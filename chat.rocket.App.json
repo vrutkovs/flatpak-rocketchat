@@ -5,7 +5,8 @@
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "1.4",
     "sdk": "org.freedesktop.Sdk",
-    "command": "Git-it",
+    "command": "rocketchat",
+    "desktop-file-name-prefix": "(Nightly) ",
     "finish-args": [
         "--device=dri",
         "--filesystem=host",
@@ -28,6 +29,7 @@
         },
         {
             "name": "rocketchat",
+            "no-autogen": true,
             "build-options": {
                 "build-args": [
                     "--share=network"
@@ -37,11 +39,14 @@
                 {
                     "type": "git",
                     "url": "https://github.com/RocketChat/Rocket.Chat.Electron.git",
-                    "branch": "2.0.2",
-                    "dest": "rocketchat"
+                    "branch": "2.0.2"
                 },
                 {
                     "path": "Makefile",
+                    "type": "file"
+                },
+                {
+                    "path": "chat.rocket.App.desktop",
                     "type": "file"
                 }
             ]
