@@ -39,11 +39,12 @@
                 {
                     "type": "git",
                     "url": "https://github.com/RocketChat/Rocket.Chat.Electron.git",
-                    "branch": "2.0.2"
+                    "branch": "2.3.0"
                 },
                 {
-                    "path": "Makefile",
-                    "type": "file"
+                    "path": "rocket-Makefile",
+                    "type": "file",
+                    "dest-filename": "Makefile"
                 },
                 {
                     "path": "chat.rocket.App.desktop",
