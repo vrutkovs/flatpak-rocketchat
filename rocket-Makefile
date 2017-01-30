@@ -7,8 +7,9 @@ install:
 	mkdir -p /app/share/rocketchat
 	cp -r * /app/share/rocketchat
 	mkdir -p /app/share/applications
-	ls -la .
-	cp chat.rocket.App.desktop /app/share/rocketchat/applications
+	cp chat.rocket.App.desktop /app/share/applications/chat.rocket.App.desktop
+	mkdir -p /app/share/icons/hicolor/512x512/apps
+	cp build/icons/512x512.png /app/share/icons/hicolor/512x512/apps/chat.rocket.App.png
 	echo "#!/bin/bash" > /app/bin/rocketchat
 	echo 'cd /app/share/rocketchat && npm start' >> /app/bin/rocketchat
 	chmod +x /app/bin/rocketchat
